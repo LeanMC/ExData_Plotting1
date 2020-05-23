@@ -1,3 +1,6 @@
+## A brief note regarding memory usage
+I **did** do a memory usage calculation and, assuming ~8 bytes per data point, to load the data one needs about 8\*9\*2,075,259 = 149,418,648 bytes, or about 150 MB of memory. This is well within the constraints of most machines made in recent decades. I double-checked my calculation by calling `pryr::object_size` on the data after I loaded it with `read.table` and the output was, as expected, `150 MB`.
+
 ## Introduction
 
 This assignment uses data from
